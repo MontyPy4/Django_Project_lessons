@@ -11,6 +11,17 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+# Устанавливаем настройки Django
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DjangoProject.settings')
 
+# Получаем WSGI-приложение
 application = get_wsgi_application()
+
+"""Настройка сервера
+Инициализация проекта
+Развертывание
+
+Модуль os настраивает переменную окружения
+DJANGO_SETTINGS_MODULE, указывающую на файл настроек проекта
+● Функция get_wsgi_application() импортируется из
+django.core.wsgi и вызывается для создания WSGIприложения"""
